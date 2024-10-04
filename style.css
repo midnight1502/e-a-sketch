@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;    
+    border: 25px solid green;
+    width: 40vw;
+    height: 40vw;
+    min-width: 500px;
+    min-height: 500px;
+    background-color: black;
+}
+
+.cell {
+    border: 1px dotted gray;
+    flex: calc(100% / 16);
+    height: calc(100% / 16);
+    box-sizing: border-box;
+}
+
+.newCell {
+  border: 1px dotted gray;
+  box-sizing: border-box;
+}
+
+.btn {
+  margin: 20px 0;
+  padding: 15px 5px;
+  border-radius: 15px;
+  border: 2px dotted;
+   background-color: #ffffff;
+}
+
+.btn:hover {
+  border: 2px solid;
+  cursor: pointer;
+  background-color: #f27f27;
+}
